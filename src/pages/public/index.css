@@ -208,29 +208,114 @@ button {
   margin-bottom: 12px;
 }
 
+
+
 /* =========================
    FOOTER
 ========================= */
 
 .menu-footer {
   margin-top: 20px;
-  padding: 30px 20px 40px;
+  padding: 38px 20px 25px;
   text-align: center;
   background: #fafafa;
   border-top: 1px solid #eee;
 }
 
+.menu-footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .menu-footer h3 {
-  margin: 0 0 15px;
-  font-size: 18px;
+  margin: 0 0 22px;
+  font-size: 19px;
   font-weight: 700;
 }
 
-.menu-footer p {
-  margin: 8px 0;
-  color: #666;
-  font-size: 14px;
+.menu-contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
+
+.menu-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #555;
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.menu-contact-item:hover {
+  color: #111;
+  transform: translateY(-1px);
+}
+
+.contact-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+
+  font-size: 15px;
+}
+
+.menu-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 22px;
+  padding: 9px 16px;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+
+  color: #444;
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.menu-instagram:hover {
+  background: #fff;
+  border-color: #ccc;
+  transform: translateY(-1px);
+}
+
+.menu-footer-bottom {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding-top: 18px;
+
+  border-top: 1px solid #eee;
+
+  color: #aaa;
+  font-size: 12px;
+}
+
+
 
 /* =========================
    MOBILE
@@ -475,6 +560,80 @@ button {
   color: #666;
 }
 
+
+.design-dark .menu-contact-item {
+  color: #aaa;
+}
+
+.design-dark .menu-contact-item:hover {
+  color: #fff;
+}
+
+.design-dark .contact-icon {
+  background: #1c1c1c;
+  border-color: #333;
+}
+
+.design-dark .menu-instagram {
+  color: #aaa;
+  border-color: #333;
+}
+
+.design-dark .menu-instagram:hover {
+  background: #1c1c1c;
+  border-color: #444;
+}
+
+.design-dark .menu-footer-bottom {
+  border-top-color: #292929;
+  color: #666;
+}
+
+
+
+
+.contact-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.instagram-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: linear-gradient(
+    135deg,
+    #feda75 0%,
+    #fa7e1e 25%,
+    #d62976 55%,
+    #962fbf 75%,
+    #4f5bd5 100%
+  );
+  color: #fff;
+}
+
+.instagram-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.instagram-icon .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 /* =====================================================
    CAFE - CATEGORY GRID
 ===================================================== */
@@ -639,11 +798,7 @@ button {
   width: 100%;
 }
 
-.category-tabs {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+
 
 
 /* =====================================================
